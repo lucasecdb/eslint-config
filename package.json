@@ -1,5 +1,5 @@
 {
-  "name": "@lucasecdb/eslint-config-base",
+  "name": "@lucasecdb/eslint-config",
   "version": "0.0.0",
   "description": "My personal base config for eslint",
   "main": "index.js",
@@ -9,7 +9,7 @@
   "files": [
     "index.js"
   ],
-  "peerDependencies": {
+  "dependencies": {
     "@typescript-eslint/eslint-plugin": "^1.4.2",
     "@typescript-eslint/parser": "^1.4.2",
     "eslint": "^5.15.1",
@@ -18,20 +18,8 @@
     "eslint-plugin-prettier": "^3.0.1",
     "eslint-plugin-react": "^7.12.4",
     "eslint-plugin-react-hooks": "^1.5.0",
-    "prettier": "^1.16.4",
-    "typescript": "^3.3.3333"
-  },
-  "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^1.4.2",
-    "@typescript-eslint/parser": "^1.4.2",
-    "eslint": "^5.15.1",
-    "eslint-config-prettier": "^4.1.0",
-    "eslint-plugin-jsx-a11y": "^6.2.1",
-    "eslint-plugin-prettier": "^3.0.1",
-    "eslint-plugin-react": "^7.12.4",
-    "eslint-plugin-react-hooks": "^1.5.0",
-    "prettier": "^1.16.4",
-    "typescript": "^3.3.3333"
+    "prettier": "~1.16.4",
+    "typescript": "~3.3.3333"
   },
   "prettier": {
     "semi": false,
