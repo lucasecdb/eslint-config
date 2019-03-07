@@ -9,6 +9,7 @@
   "files": [
     "index.js"
   ],
+  "keywords": ["eslint", "eslintconfig"],
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^1.4.2",
     "@typescript-eslint/parser": "^1.4.2",
