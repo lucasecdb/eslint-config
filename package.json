@@ -1,6 +1,6 @@
 {
   "name": "@lucasecdb/eslint-config",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "My personal base config for eslint",
   "main": "index.js",
   "repository": "https://github.com/lucasecdb/eslint-config-base",
@@ -9,7 +9,10 @@
   "files": [
     "index.js"
   ],
-  "keywords": ["eslint", "eslintconfig"],
+  "keywords": [
+    "eslint",
+    "eslintconfig"
+  ],
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^1.4.2",
     "@typescript-eslint/parser": "^1.4.2",
