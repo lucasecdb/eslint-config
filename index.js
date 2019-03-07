@@ -7,7 +7,7 @@ module.exports = {
     'prettier/@typescript-eslint',
     'prettier/react',
   ],
-  plugins: ['@typescript-eslint', 'react-hooks', 'prettier'],
+  plugins: ['@typescript-eslint', 'jsx-a11y', 'react-hooks', 'prettier'],
 
   parser: '@typescript-eslint/parser',
   parserOptions: {
