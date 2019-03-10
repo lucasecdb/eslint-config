@@ -43,6 +43,7 @@ module.exports = {
     // possible errors https://eslint.org/docs/rules/#possible-errors
     'no-async-promise-executor': 'error',
     'no-await-in-loop': 'error',
+    'no-console': ['warn', { allow: ['warn', 'error'] }],
     'no-template-curly-in-string': 'error',
     'require-atomic-updates': 'error',
 
