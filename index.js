@@ -45,7 +45,6 @@ module.exports = {
     'no-await-in-loop': 'error',
     'no-template-curly-in-string': 'error',
     'require-atomic-updates': 'error',
-    'no-extra-parens': 'error',
 
     // best practices https://eslint.org/docs/rules/#best-practices
     'no-else-return': 'error',
