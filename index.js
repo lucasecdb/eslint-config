@@ -56,7 +56,6 @@ module.exports = {
 
     // variables https://eslint.org/docs/rules/#variables
     'no-shadow-restricted-names': 'error',
-    'no-undefined': 'error',
     '@typescript-eslint/no-unused-vars': [
       'error',
       {
