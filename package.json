@@ -20,16 +20,21 @@
     "eslint-plugin-jsx-a11y": "^6.2.1",
     "eslint-plugin-prettier": "^3.0.1",
     "eslint-plugin-react": "^7.12.4",
-    "eslint-plugin-react-hooks": "^1.5.0",
-    "prettier": "~1.16.4",
-    "typescript": "~3.3.3333"
+    "eslint-plugin-react-hooks": "^1.5.0"
+  },
+  "peerDependencies": {
+    "eslint": "^5.15.1",
+    "prettier": "^1.16.4",
+    "typescript": "^3.4.1"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "prettier": "^1.16.4",
+    "typescript": "^3.4.1"
   },
   "prettier": {
     "semi": false,
     "singleQuote": true,
     "trailingComma": "es5"
-  },
-  "peerDependencies": {
-    "eslint": "^5.15.1"
   }
 }
