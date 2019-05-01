@@ -4,6 +4,9 @@
   "description": "My personal base config for eslint",
   "main": "index.js",
   "repository": "https://github.com/lucasecdb/eslint-config-base",
+  "scripts": {
+    "eslint-check": "eslint --print-config index.js | eslint-config-prettier-check"
+  },
   "author": "Lucas Cordeiro",
   "license": "MIT",
   "files": [
