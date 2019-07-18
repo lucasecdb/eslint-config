@@ -1,4 +1,6 @@
-# Eslint configuration
+# eslint configuration
+
+[![NPM](https://img.shields.io/npm/v/@lucasecdb/eslint-config.svg)](https://www.npmjs.com/package/@lucasecdb/eslint-config)
 
 hey there! 👋 this is my personal eslint configuration, feel free to use at any project
 or copy this repo settings to setup your own config and publish it to NPM!
