@@ -8,7 +8,7 @@ or copy this repo settings to setup your own config and publish it to NPM!
 ## installation
 
 ```bash
-yarn add -D @lucasecdb/eslint-config
+yarn add -D lucasecdb/eslint-config
 ```
 
 create a `.eslintrc` file at the root of your project if you didn't already,

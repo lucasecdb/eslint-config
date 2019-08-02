@@ -3,7 +3,10 @@
   "version": "0.3.9",
   "description": "My personal base config for eslint",
   "main": "index.js",
-  "repository": "https://github.com/lucasecdb/eslint-config-base",
+  "repository": "https://github.com/lucasecdb/eslint-config.git",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "scripts": {
     "eslint-check": "eslint --print-config index.js | eslint-config-prettier-check"
   },
