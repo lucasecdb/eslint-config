@@ -62,7 +62,8 @@ module.exports = {
       {
         vars: 'local',
         args: 'all',
-        argsIgnorePattern: '^_',
+        argsIgnorePattern: '^_+$',
+        varsIgnorePattern: '^_+$',
         ignoreRestSiblings: true,
         caughtErrors: 'all',
       },
