@@ -75,6 +75,12 @@ module.exports = {
     // es6 https://eslint.org/docs/rules/#ecmascript-6
     'no-var': 'error',
     'no-useless-computed-key': 'error',
+    'sort-imports': [
+      'warn',
+      {
+        ignoreDeclarationSort: true,
+      },
+    ],
 
     // typescript
     '@typescript-eslint/explicit-function-return-type': 'off',
