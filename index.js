@@ -29,14 +29,6 @@ module.exports = {
 
     // override eslint-config-prettier options
     curly: ['error', 'all'],
-    quotes: [
-      'error',
-      'single',
-      {
-        avoidEscape: true,
-        allowTemplateLiterals: false,
-      },
-    ],
 
     // eslint base rules
 
