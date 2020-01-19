@@ -1,6 +1,6 @@
 {
   "name": "@lucasecdb/eslint-config",
-  "version": "0.5.1",
+  "version": "0.6.1",
   "description": "My personal base config for eslint",
   "main": "index.js",
   "repository": "https://github.com/lucasecdb/eslint-config.git",
