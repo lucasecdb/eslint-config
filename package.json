@@ -10,7 +10,8 @@
   "author": "Lucas Cordeiro",
   "license": "MIT",
   "files": [
-    "index.js"
+    "index.js",
+    "rules/"
   ],
   "keywords": [
     "eslint",
