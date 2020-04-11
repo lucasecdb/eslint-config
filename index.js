@@ -1,26 +1,14 @@
 module.exports = {
   extends: [
     'eslint:recommended',
-    'plugin:@typescript-eslint/recommended',
-    'plugin:react/recommended',
-    'plugin:jsx-a11y/recommended',
     'prettier',
-    'prettier/@typescript-eslint',
-    'prettier/react',
+    './rules/typescript.js',
+    './rules/react.js',
   ],
-  plugins: ['@typescript-eslint', 'jsx-a11y', 'react-hooks', 'prettier'],
-
-  parser: '@typescript-eslint/parser',
+  plugins: ['prettier'],
   parserOptions: {
+    ecmaVersion: 2019,
     sourceType: 'module',
-    ecmaFeatures: {
-      jsx: true,
-    },
-  },
-  settings: {
-    react: {
-      version: 'detect',
-    },
   },
 
   rules: {
@@ -49,17 +37,6 @@ module.exports = {
 
     // variables https://eslint.org/docs/rules/#variables
     'no-shadow-restricted-names': 'error',
-    '@typescript-eslint/no-unused-vars': [
-      'error',
-      {
-        vars: 'local',
-        args: 'all',
-        argsIgnorePattern: '^_+$',
-        varsIgnorePattern: '^_+$',
-        ignoreRestSiblings: true,
-        caughtErrors: 'all',
-      },
-    ],
 
     // stylistic issues https://eslint.org/docs/rules/#stylistic-issues
     'one-var': ['error', 'never'],
@@ -73,20 +50,5 @@ module.exports = {
         ignoreDeclarationSort: true,
       },
     ],
-
-    // typescript
-    '@typescript-eslint/explicit-function-return-type': 'off',
-    '@typescript-eslint/interface-name-prefix': 'off',
-
-    // react-specific rules
-    'react/no-this-in-sfc': 'error',
-    'react/no-typos': 'error',
-    'react/prop-types': ['error', { skipUndeclared: true }],
-
-    'react/jsx-boolean-value': 'error',
-    'react/jsx-fragments': ['error', 'syntax'],
-
-    'react-hooks/rules-of-hooks': 'error',
-    'react-hooks/exhaustive-deps': 'warn',
   },
 }
