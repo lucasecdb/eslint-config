@@ -5,7 +5,8 @@
   "main": "index.js",
   "repository": "https://github.com/lucasecdb/eslint-config.git",
   "scripts": {
-    "eslint-check": "eslint --print-config index.js | eslint-config-prettier-check"
+    "eslint-check": "eslint --print-config index.js | eslint-config-prettier-check",
+    "lint": "eslint ."
   },
   "author": "Lucas Cordeiro",
   "license": "MIT",
