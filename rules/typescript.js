@@ -47,5 +47,16 @@ module.exports = {
         '@typescript-eslint/interface-name-prefix': 'off',
       },
     },
+    {
+      // disable import rules for declaration files as they
+      // may be false-negatives when you have multiple `declare`
+      // blocks in the same file.
+      files: ['*.d.ts'],
+      rules: {
+        'import/order': 'off',
+        'import/no-duplicates': 'off',
+        'import/export': 'off',
+      },
+    },
   ],
 }
