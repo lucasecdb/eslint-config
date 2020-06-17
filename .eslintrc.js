@@ -4,5 +4,5 @@ module.exports = {
   ...base,
   root: true,
   parserOptions: { ...base.parserOptions, sourceType: 'script' },
-  env: { ...base.env, node: true }
+  env: { ...base.env, node: true },
 }
