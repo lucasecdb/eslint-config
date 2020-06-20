@@ -44,7 +44,37 @@ module.exports = {
         ],
 
         '@typescript-eslint/explicit-module-boundary-types': 'off',
-        '@typescript-eslint/naming-convention': 'warn',
+        '@typescript-eslint/naming-convention': [
+          'warn',
+          {
+            selector: 'default',
+            format: ['camelCase'],
+          },
+
+          {
+            selector: 'variableLike',
+            format: ['camelCase', 'UPPER_CASE', 'PascalCase'],
+            leadingUnderscore: 'allow',
+            trailingUnderscore: 'allow',
+          },
+
+          {
+            selector: 'property',
+            format: null,
+            leadingUnderscore: 'allow',
+            trailingUnderscore: 'allow',
+          },
+
+          {
+            selector: 'enumMember',
+            format: ['PascalCase', 'UPPER_CASE'],
+          },
+
+          {
+            selector: 'typeLike',
+            format: ['PascalCase'],
+          },
+        ],
       },
     },
     {
