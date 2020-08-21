@@ -15,6 +15,17 @@ module.exports = {
     'no-new-wrappers': 'error',
     radix: 'error',
     yoda: 'error',
+    'object-shorthand': [
+      'error',
+      'always',
+      {
+        ignoreConstructors: false,
+        avoidQuotes: true,
+      },
+    ],
+    'prefer-rest-params': 'error',
+    'prefer-spread': 'error',
+    'symbol-description': 'error',
 
     // variables https://eslint.org/docs/rules/#variables
     'no-shadow-restricted-names': 'error',
