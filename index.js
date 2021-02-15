@@ -5,6 +5,7 @@ module.exports = {
     './rules/prettier.js',
     './rules/typescript.js',
     './rules/react.js',
+    './rules/style.js',
   ],
   parserOptions: {
     ecmaVersion: 2019,

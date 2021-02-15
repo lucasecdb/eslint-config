@@ -17,6 +17,9 @@ module.exports = {
       },
 
       rules: {
+        // Prevent unused declared variables
+        // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-unused-vars.md
+        'no-unused-vars': 'off',
         '@typescript-eslint/no-unused-vars': [
           'error',
           {
@@ -30,10 +33,15 @@ module.exports = {
         ],
 
         // Enforce optional chaining over chaining AND (&&) operators
+        // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/prefer-optional-chain.md
         '@typescript-eslint/prefer-optional-chain': 'warn',
+
+        // Enforce optional chaining over chaining AND (&&) operators
+        // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-non-null-asserted-optional-chain.md
         '@typescript-eslint/no-non-null-asserted-optional-chain': 'error',
 
         // Enforce nullish coalescing instead of short-circuiting (?? instead of &&)
+        // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/prefer-nullish-coalescing.md
         '@typescript-eslint/prefer-nullish-coalescing': [
           'warn',
           {
@@ -43,7 +51,12 @@ module.exports = {
           },
         ],
 
+        // Explicitly defines what a module scoped method returns
+        // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/explicit-module-boundary-types.md
         '@typescript-eslint/explicit-module-boundary-types': 'off',
+
+        // Require a consistent naming convention
+        // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/naming-convention.md
         '@typescript-eslint/naming-convention': [
           'warn',
           {
@@ -73,6 +86,16 @@ module.exports = {
           {
             selector: 'typeLike',
             format: ['PascalCase'],
+          },
+        ],
+
+        // Enforces consistent usage of type imports
+        // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/consistent-type-imports.md
+        '@typescript-eslint/consistent-type-imports': [
+          'warn',
+          {
+            prefer: 'type-imports',
+            disallowTypeAnnotations: false,
           },
         ],
       },
