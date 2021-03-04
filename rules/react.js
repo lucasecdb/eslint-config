@@ -36,5 +36,9 @@ module.exports = {
     // Verify the list of the dependencies for Hooks like useEffect and similar
     // https://reactjs.org/docs/hooks-rules.html#eslint-plugin
     'react-hooks/exhaustive-deps': 'warn',
+
+    // Enforce curly braces or disallow unnecessary curly braces in JSX props and/or children
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-curly-brace-presence.md
+    'react/jsx-curly-brace-presence': ['error', 'never'],
   },
 }
